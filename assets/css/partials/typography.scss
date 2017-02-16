@@ -1,0 +1,49 @@
+html {
+    font-size: calc(.75em + .75vw);
+}
+
+
+/* setting the max width*/
+
+@media screen and (min-width: 50em) {
+    html {
+        font-size: 1.15em;
+    }
+}
+
+body, h1, h2, h3, h3, h5, p, a, button, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 1.602rem;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    font-size: 1.424rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.266rem;
+}
+h4 {
+    font-size: 1.125rem;
+}
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+    line-height: 1.25;
+}
+
+.small {
+    font-size: .75rem;
+}
+
+.bold {
+    font-weight: 900;
+}

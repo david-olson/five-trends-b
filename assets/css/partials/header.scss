@@ -1,0 +1,22 @@
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .logo {
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+            width: 100%;
+            height: auto;
+            transition: all ease-out .25s;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+    h1 {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 40px;
+    }
+}

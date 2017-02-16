@@ -1,0 +1,28 @@
+footer {
+    padding-bottom: 100px;
+    .left {
+        display: block;
+        width: 50%;
+        float: left;
+        p {
+            margin-bottom: .5rem;
+        }
+    }
+    .right {
+        display: block;
+        width: 50%;
+        float: right;
+        text-align: right;
+        ul {
+            
+            list-style: none;
+            li {
+                display: inline-block;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
