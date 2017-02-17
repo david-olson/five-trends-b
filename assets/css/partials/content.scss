@@ -36,6 +36,10 @@ main {
                     height: 20px;
                     display: inline-block;
                     vertical-align: middle;
+                    transition: all ease-out .25s;
+                    &:hover {
+                        opacity: .5;
+                    }
                 }
             }
         }

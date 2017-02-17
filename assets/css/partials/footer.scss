@@ -6,6 +6,13 @@ footer {
         float: left;
         p {
             margin-bottom: .5rem;
+            a {
+                color: $textColor;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
     .right {
@@ -21,6 +28,10 @@ footer {
                 img {
                     width: 30px;
                     height: 30px;
+                    transition: all ease-out .25s;
+                    &:hover {
+                        opacity: .5;
+                    }
                 }
             }
         }

@@ -4,12 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>5 Trends for 2017 | Premier Inc.</title>
+    <meta property="og:url" content="http://premierinc.com" />
+    <meta property="og:title" content="5 Trends for Healthcare in 2017 | Premier Inc." />
+    <meta property="og:description" content="Wondering what changes you can expect to see in healthcare under the new administration? You’re not alone." />
+    <meta property="og:image" content="https://uberflip.cdntwrk.com/files/aHViPTYyMzk0JmNtZD1wcmltYXJ5X2xvZ28mdmVyc2lvbj0xNDgwNDUyOTU3JnNpZz0zODliNWM3MWEzZWQ2ZTU3MzhiMjQxZTY2Mzk3Y2NhYQ%253D%253D" />
     <meta class="mktoString" id="video0Title" mktoName="Video 0 Title" default="Healthcare Under a New Administration">
     <meta class="mktoString" id="video1Title" mktoName="Video 1 Title" default="Repeal and Replace">
     <meta class="mktoString" id="video2Title" mktoName="Video 2 Title" default="Value-Based Care: The Movement">
     <meta class="mktoString" id="video3Title" mktoName="Video 3 Title" default="State Designed Healthcare">
     <meta class="mktoString" id="video4Title" mktoName="Video 4 Title" default="The Cure to High Drug Costs">
     <meta class="mktoString" id="video5Title" mktoName="Video 5 Title" default="Consumer-Driven Healthcare">
+    <meta class="mktoString" id="video0Length" mktoName="Video 0 Length" default="0:00">
+    <meta class="mktoString" id="video1Length" mktoName="Video 1 Length" default="0:00">
+    <meta class="mktoString" id="video2Length" mktoName="Video 2 Length" default="0:00">
+    <meta class="mktoString" id="video3Length" mktoName="Video 3 Length" default="0:00">
+    <meta class="mktoString" id="video4Length" mktoName="Video 4 Length" default="0:00">
+    <meta class="mktoString" id="video5Length" mktoName="Video 5 Length" default="0:00">
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="main.min.css">
 </head>
@@ -25,7 +36,7 @@
             </header>
             <h2>How will you prepare your organization for the changes ahead?</h2>
             <p>Wondering what changes you can expect to see in healthcare under the new administration? You’re not alone. With the “repeal and replacement” of the Affordable Care Act looming in Washington, many healthcare leaders are wondering how to move forward and prepare for the future.</p>
-            <p>Our team of healthcare experts share what you can expect to see in 2017 and how you can position your organization for success. Watch the video now. </p>
+                <p>Our team of healthcare experts share what you can expect to see in 2017 and how you can position your organization for success. Watch the video now. </p>
             <div class="video" id="video">
                 <div class="video_target" id="videoTarget"></div>
             </div>
@@ -37,13 +48,13 @@
                             <a href="javascript:shareClickHandler()" id="shareButton"><img src="./assets/img/17123_mail.svg" alt="Email" /></a>
                         </li>
                         <li>
-                            <a href="#"><img src="./assets/img/17123_facebook.svg" alt="Facebook" /></a>
+                            <a id="facebookShare" href="#"><img src="./assets/img/17123_facebook.svg" alt="Facebook" /></a>
                         </li>
                         <li>
-                            <a href="#"><img src="./assets/img/17123_twitter.svg" alt="Twitter" /></a>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=Read%20this%3A%205%20Trends%20in%20Healthcare%20for%202017&url=http%3A%2F%2Fpremierinc.com"><img src="./assets/img/17123_twitter.svg" alt="Twitter" /></a>
                         </li>
                         <li>
-                            <a href="#"><img src="./assets/img/17123_linkedin.svg" alt="LinkedIn" /></a>
+                            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fpremierinc.com"><img src="./assets/img/17123_linkedin.svg" alt="LinkedIn" /></a>
                         </li>
                     </ul>
                 </div>
@@ -54,22 +65,22 @@
             </div>
             <div class="video_list" id="videoList">
                 <ol type="1">
-                    <li id="row0"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton0" /> ${video0Title} <span class="list_length" id="listLength1">2:10</span>
+                    <li id="row0"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton0" /> ${video0Title} <span class="list_length" id="listLength1">${video0Length}</span>
                         <div class="clear"></div>
                     </li>
-                    <li id="row1"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton1" /> ${video1Title} <span class="list_length" id="listLength2">2:00</span>
+                    <li id="row1"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton1" /> ${video1Title} <span class="list_length" id="listLength2">${video1Length}</span>
                         <div class="clear"></div>
                     </li>
-                    <li id="row2"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton2" /> ${video2Title} <span class="list_length" id="listLength3">2:00</span>
+                    <li id="row2"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton2" /> ${video2Title} <span class="list_length" id="listLength3">${video2Length}</span>
                         <div class="clear"></div>
                     </li>
-                    <li id="row3"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton3" /> ${video3Title} <span class="list_length" id="listLength4">2:00</span>
+                    <li id="row3"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton3" /> ${video3Title} <span class="list_length" id="listLength4">${video3Length}</span>
                         <div class="clear"></div>
                     </li>
-                    <li id="row4"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton4" /> ${video4Title} <span class="list_length" id="listLength5">2:00</span>
+                    <li id="row4"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton4" /> ${video4Title} <span class="list_length" id="listLength5">${video4Length}</span>
                         <div class="clear"></div>
                     </li>
-                    <li id="row5"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton5" /> ${video5Title} <span class="list_length" id="listLength6">2:00</span>
+                    <li id="row5"><img src="./assets/img/17123_play.svg" alt="" class="icon play_button play_active" id="playButton5" /> ${video5Title} <span class="list_length" id="listLength6">${video5Length}</span>
                         <div class="clear"></div>
                     </li>
                 </ol>
@@ -94,26 +105,26 @@
         <div class="clear"></div>
         <footer>
             <div class="left">
-                <p class="small">1-888-777-1552 | <a href="#">CONTACT</a> | <a href="#">CAREERS</a></p>
-                <p class="small">&copy; Copyright 2017 Premier, Inc. All rights reserved.</p>
+                <p class="small">1-888-777-1552 | <a href="https://www.premierinc.com/contact-premier/">CONTACT</a> | <a href="https://www.premierinc.com/careers/">CAREERS</a></p>
+                <p class="small">&copy; Copyright 2017 <a href="http://premierinc.com">Premier, Inc.</a> All rights reserved.</p>
                 <p class="small">Premier, Inc. 13034 Ballantyne Corporate Place, Charlotte, NC 28277</p>
             </div>
             <div class="right">
                 <ul>
                     <li>
-                        <a href="#"><img src="./assets/img/17123_facebook.svg" alt="Facebook" /></a>
+                        <a href="https://www.facebook.com/premierhealthcarealliance/"><img src="./assets/img/17123_facebook.svg" alt="Facebook" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/img/17123_twitter.svg" alt="Twitter" /></a>
+                        <a href="https://twitter.com/premierha"><img src="./assets/img/17123_twitter.svg" alt="Twitter" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/img/17123_linkedin.svg" alt="LinkedIn" /></a>
+                        <a href="https://www.linkedin.com/company-beta/6766/"><img src="./assets/img/17123_linkedin.svg" alt="LinkedIn" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/img/17123_instagram.svg" alt="Instagram" /></a>
+                        <a href="https://www.instagram.com/premierha/"><img src="./assets/img/17123_instagram.svg" alt="Instagram" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/img/17123_youtube.svg" alt="YouTube" /></a>
+                        <a href="https://www.youtube.com/user/premieralliance"><img src="./assets/img/17123_youtube.svg" alt="YouTube" /></a>
                     </li>
                 </ul>
             </div>
@@ -139,11 +150,11 @@
 
         //If there is no parameter, try and get a cookie for the last video the user watched.
         if (!vidNumber) {
-                vidNumber = getCookie('lvw17123');
-                vidNumber = parseInt(vidNumber) + 1;
-                vidNumber = String(vidNumber);
+            vidNumber = getCookie('lvw17123');
+            vidNumber = parseInt(vidNumber) + 1;
+            vidNumber = String(vidNumber);
         }
-        
+
         theVideoId = getVideoId(vidNumber);
 
         tag.src = 'https://www.youtube.com/iframe_api';
@@ -158,10 +169,10 @@
                 width: '640',
                 videoId: theVideoId.id,
                 playerVars: {
-                    controls: 0,
+                    controls: 1,
                     showinfo: 0,
                     rel: 0,
-                    modestbranding: 1
+                    modestbranding: 0
                 },
                 events: {
                     onReady: initialize
@@ -187,9 +198,31 @@
                 }
                 document.getElementById('vidEnd').innerHTML = time;
             }, 2000);
-            
+
         }
     </script>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '382579548779670',
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </body>
 
 </html>

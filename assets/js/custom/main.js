@@ -32,15 +32,27 @@ function main() {
     }, 500);
     playClickHandler();
     player.addEventListener('onStateChange', 'initialize');
-    $('#shareClose').mouseenter(function() {
-       var randomVals1 = Math.floor(Math.random() * (-100-100+1)-1),
-        randomVals2 = Math.floor(Math.random() * (-100-100+1)-1),
-        spinVal = Math.floor(Math.random() * 360),
-        translateVal = 'translate(' + randomVals1 + '%, ' + randomVals2 + '%) rotate(' + spinVal + 'deg)' ;
-    $('#shareToaster').css({
-//        transform: 'translate(-50%, -500%)'
-        transform: translateVal
-    }); 
+    $('#toasterOverlay').click(function() {
+        closeShare();
+    });
+//    $('#shareClose').mouseenter(function () {
+//        var randomVals1 = Math.floor(Math.random() * (-100 - 100 + 1) - 1),
+//            randomVals2 = Math.floor(Math.random() * (-100 - 100 + 1) - 1),
+//            spinVal = Math.floor(Math.random() * 360),
+//            translateVal = 'translate(' + randomVals1 + '%, ' + randomVals2 + '%) rotate(' + spinVal + 'deg)';
+//        $('#shareToaster').css({
+//            //        transform: 'translate(-50%, -500%)'
+//            transform: translateVal
+//        });
+//    });
+    document.getElementById('facebookShare').addEventListener('click', function (e) {
+        e.preventDefault();
+        FB.ui({
+            method: 'share',
+            href: 'https://premierinc.com',
+            app_id: '382579548779670',
+            display: 'iframe'
+        }, function (response) {});
     });
 }
 
@@ -201,9 +213,9 @@ function shareClickHandler() {
                 'transform': 'translate(-50%, -50%)'
             });
         }, 500);
-        setTimeout(function() {
+        setTimeout(function () {
             $('#shareToaster').css({
-                'transform': 'translate(-50%, -50%) rotate(540deg)'
+                'transform': 'translate(-50%, -50%)'
             });
         }, 1000);
     }, 500);
@@ -213,7 +225,7 @@ function closeShare() {
     $('#shareToaster').css({
         transform: 'translate(-50%, -500%)'
     });
-    setTimeout(function() {
+    setTimeout(function () {
         $('#toasterOverlay').fadeOut(500);
         $('#shareToaster').css({
             display: 'none'

@@ -33,7 +33,7 @@
     padding: 100px;
     text-align: center;
     transform: translate(-50%, -500%);
-    transition: all ease-out .5s;
+    transition: cubic-bezier(.55,-0.39,.44,1.32) .75s;
     .link {
         background-color: #efefef;
         padding: 10px;
