@@ -5,6 +5,7 @@ aside {
     padding: 50px 60px;
     color: #ffffff;
     border-left: 5px solid rgba(0, 0, 0, 0.25);
+    
     position: relative;
     &:before {
         display: block;
@@ -16,6 +17,15 @@ aside {
         top: 70px;
         left: 0px;
         transform: rotate(45deg) translateX(-45px);
+    }
+    @media only screen and (max-width: 800px) {
+        float: none;
+        width: 100%;
+        margin-bottom: 80px;
+        border-left: 0;
+        &:before {
+            display: none;
+        }
     }
     h2 {
         margin-bottom: 100px;
@@ -32,7 +42,7 @@ aside {
         display: block;
         background-color: #fff;
         color: #000000;
-        padding: 20px;
+        padding: 30px;
         margin-bottom: 80px;
         text-align: left;
         padding-bottom: 60px;
@@ -41,6 +51,13 @@ aside {
         h3 {
             font-size: 1rem;
             margin-bottom: 1rem;
+            @media only screen and (max-width: 940px) {
+                font-size: .75rem;
+                line-height: 1.25;
+            }
+            @media only screen and (max-width: 800px) {
+                font-size: 1rem;
+            }
         }
         .block_icon {
             position: absolute;
@@ -64,6 +81,12 @@ aside {
             background: -webkit-linear-gradient(top,  rgba(17,121,176,1) 0%,rgba(0,82,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(to bottom,  rgba(17,121,176,1) 0%,rgba(0,82,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1179b0', endColorstr='#005293',GradientType=0 ); /* IE6-9 */
+            @media only screen and (max-width: 940px) {
+                font-size: .65rem;
+            }
+            @media only screen and (max-width: 800px) {
+                font-size: 1rem;
+            }
             &:hover {
                 background: rgb(17,121,176); /* Old browsers */
                 background: -moz-linear-gradient(top,  rgb(12, 98, 144) 0%, rgb(0, 44, 78) 100%); /* FF3.6-15 */
