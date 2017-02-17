@@ -58,9 +58,10 @@ function main() {
 
 function getQuery(variable) {
     var query = window.location.search.substring(1),
-        vars = query.split('&');
+        vars = query.split('&'),
+        x;
 
-    for (var x = 0; x < vars.length; x++) {
+    for (x = 0; x < vars.length; x++) {
         var pair = vars[x].split('=');
         if (pair[0] == variable) {
             return pair[1];
@@ -78,8 +79,9 @@ function setCookie(cname, cvalue, exdays) {
 
 function getCookie(cname) {
     var name = cname + '=',
-        ca = document.cookie.split(';');
-    for (var x = 0; x < ca.length; x++) {
+        ca = document.cookie.split(';'),
+        x;
+    for (x = 0; x < ca.length; x++) {
         var c = ca[x];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
@@ -93,6 +95,7 @@ function getCookie(cname) {
 
 function getVideoId(number) {
     console.log(number);
+    number = parseInt(number);
     var videoId,
         videoIds = {
             0: {
@@ -134,22 +137,25 @@ function getVideoId(number) {
         }
 
     switch (number) {
-    case '0':
+    case 0:
         videoId = videoIds[0];
         break;
-    case '1':
+    case 1:
         videoId = videoIds[1];
         break;
-    case '2':
+    case 2:
         videoId = videoIds[2];
         break;
-    case '3':
+    case 3:
         videoId = videoIds[3];
         break;
-    case '4':
+    case 4:
         videoId = videoIds[4];
         break;
-    case '5':
+    case 5:
+        videoId = videoIds[5];
+        break;
+    case 6: 
         videoId = videoIds[5];
         break;
     default:

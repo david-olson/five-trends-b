@@ -20,7 +20,7 @@
     <meta class="mktoString" id="video3Length" mktoName="Video 3 Length" default="0:00">
     <meta class="mktoString" id="video4Length" mktoName="Video 4 Length" default="0:00">
     <meta class="mktoString" id="video5Length" mktoName="Video 5 Length" default="0:00">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="main.min.css">
 </head>
@@ -36,7 +36,7 @@
             </header>
             <h2>How will you prepare your organization for the changes ahead?</h2>
             <p>Wondering what changes you can expect to see in healthcare under the new administration? You’re not alone. With the “repeal and replacement” of the Affordable Care Act looming in Washington, many healthcare leaders are wondering how to move forward and prepare for the future.</p>
-                <p>Our team of healthcare experts share what you can expect to see in 2017 and how you can position your organization for success. Watch the video now. </p>
+            <p>Our team of healthcare experts share what you can expect to see in 2017 and how you can position your organization for success. Watch the video now. </p>
             <div class="video" id="video">
                 <div class="video_target" id="videoTarget"></div>
             </div>
@@ -152,7 +152,6 @@
         if (!vidNumber) {
             vidNumber = getCookie('lvw17123');
             vidNumber = parseInt(vidNumber) + 1;
-            vidNumber = String(vidNumber);
         }
 
         theVideoId = getVideoId(vidNumber);
@@ -197,7 +196,17 @@
                     time = min + ':' + parseInt(secs);
                 }
                 document.getElementById('vidEnd').innerHTML = time;
+                var lastVidActual = getCookie('lvw17123'),
+                    currentlyWatching = parseInt(theVideoId.sequence);
+                
+                console.log('lastVid: ' + lastVidActual + ' CurrentVid: ' + currentlyWatching);
+
+                if (lastVidActual < currentlyWatching) {
+                    setCookie('lvw17123', theVideoId.sequence, 300);
+                }
             }, 2000);
+
+
 
         }
     </script>
