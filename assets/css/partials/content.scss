@@ -83,6 +83,17 @@ main {
             .active_row {
                 background-color: #efefef;
             }
+            .row_disabled {
+                color: #cccccc;
+                .list_length {
+                    background-color: #cccccc;
+                    color: #efefef;
+                }
+                img {
+                    cursor: default;
+                    opacity: .5;
+                }
+            }
         }
     }
 }

@@ -32,19 +32,19 @@ function main() {
     }, 500);
     playClickHandler();
     player.addEventListener('onStateChange', 'initialize');
-    $('#toasterOverlay').click(function() {
+    $('#toasterOverlay').click(function () {
         closeShare();
     });
-//    $('#shareClose').mouseenter(function () {
-//        var randomVals1 = Math.floor(Math.random() * (-100 - 100 + 1) - 1),
-//            randomVals2 = Math.floor(Math.random() * (-100 - 100 + 1) - 1),
-//            spinVal = Math.floor(Math.random() * 360),
-//            translateVal = 'translate(' + randomVals1 + '%, ' + randomVals2 + '%) rotate(' + spinVal + 'deg)';
-//        $('#shareToaster').css({
-//            //        transform: 'translate(-50%, -500%)'
-//            transform: translateVal
-//        });
-//    });
+    //    $('#shareClose').mouseenter(function () {
+    //        var randomVals1 = Math.floor(Math.random() * (-100 - 100 + 1) - 1),
+    //            randomVals2 = Math.floor(Math.random() * (-100 - 100 + 1) - 1),
+    //            spinVal = Math.floor(Math.random() * 360),
+    //            translateVal = 'translate(' + randomVals1 + '%, ' + randomVals2 + '%) rotate(' + spinVal + 'deg)';
+    //        $('#shareToaster').css({
+    //            //        transform: 'translate(-50%, -500%)'
+    //            transform: translateVal
+    //        });
+    //    });
     document.getElementById('facebookShare').addEventListener('click', function (e) {
         e.preventDefault();
         FB.ui({
@@ -93,80 +93,8 @@ function getCookie(cname) {
     return "";
 }
 
-function getVideoId(number) {
-    console.log(number);
-    number = parseInt(number);
-    var videoId,
-        videoIds = {
-            0: {
-                'id': 'M1LRVICWPUk',
-                'sequence': 0,
-                'title': 'Intro',
-                'nextTitle': 'Video 1'
-            },
-            1: {
-                'id': 'M1LRVICWPUk',
-                'sequence': 1,
-                'title': 'Video 1',
-                'nextTitle': 'Video 2'
-            },
-            2: {
-                'id': '6nT911jkWEo',
-                'sequence': 2,
-                'title': 'Video 2',
-                'nextTitle': 'Video 3'
-            },
-            3: {
-                'id': 'abQRt6p8T7g',
-                'sequence': 3,
-                'title': 'Video 3',
-                'nextTitle': 'Video 4'
-            },
-            4: {
-                'id': 'HamYmjllE6A',
-                'sequence': 4,
-                'title': 'Video 4',
-                'nextTitle': 'Video 5'
-            },
-            5: {
-                'id': 'VHdsoNewFdU',
-                'sequence': 5,
-                'title': 'Video 5',
-                'nextTitle': 'Video 6'
-            }
-        }
-
-    switch (number) {
-    case 0:
-        videoId = videoIds[0];
-        break;
-    case 1:
-        videoId = videoIds[1];
-        break;
-    case 2:
-        videoId = videoIds[2];
-        break;
-    case 3:
-        videoId = videoIds[3];
-        break;
-    case 4:
-        videoId = videoIds[4];
-        break;
-    case 5:
-        videoId = videoIds[5];
-        break;
-    case 6: 
-        videoId = videoIds[5];
-        break;
-    default:
-        videoId = videoIds[0];
-        break;
-    }
-    return videoId;
-}
-
 function playClickHandler() {
-    var playButtons = document.getElementsByClassName('play_active');
+    var playButtons = document.getElementsByClassName('play_enabled');
 
     for (var x = 0; x < playButtons.length; x++) {
         playButtons[x].addEventListener('click', function (e) {
@@ -237,4 +165,14 @@ function closeShare() {
             display: 'none'
         });
     }, 500);
+}
+
+function playDisabledClickHandler() {
+    var playButtonsDisabled = document.getElementsByClassName('play_disabled'),
+        x;
+    for (x = 0; x < playButtonsDisabled.length; x++) {
+        playButtonsDisabled[x].addEventListener('click', function (e) {
+            e.preventDefault();
+        })
+    }
 }
