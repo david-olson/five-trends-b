@@ -176,3 +176,9 @@ function playDisabledClickHandler() {
         })
     }
 }
+
+function formClickHandler() {
+    var formSlideDown = document.getElementById('formHolder');
+    
+    $(formSlideDown).slideDown(750);
+}

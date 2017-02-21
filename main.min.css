@@ -22,7 +22,7 @@ main .video_list ol li{padding:10px 0;border-bottom:1px solid #ccc}main .video_l
 main .video_list ol li img:hover{opacity:.5}main .video_list ol li .list_length{display:inline-block;float:right;background-color:#000;color:#fff;padding:4px}
 main .video_list ol .active_row{background-color:#efefef}main .video_list ol .row_disabled{color:#ccc}
 main .video_list ol .row_disabled .list_length{background-color:#ccc;color:#efefef}
-main .video_list ol .row_disabled img{cursor:default;opacity:.5}aside{width:33%;float:right;background-color:#1aa1e0;padding:50px 60px;color:#fff;border-left:5px solid rgba(0,0,0,0.25);position:relative}
+main .video_list ol .row_disabled img{cursor:default;opacity:.5}aside{width:33%;float:right;background-color:#1aa1e0;padding:50px 60px;color:#fff;border-left:5px solid rgba(0,0,0,0.25);position:relative;margin-bottom:1rem}
 aside:before{display:block;content:'';height:50px;width:50px;background-color:#fff;position:absolute;top:70px;left:0;-ms-transform:rotate(45deg) translateX(-45px);transform:rotate(45deg) translateX(-45px)}
 @media only screen and (max-width:800px){aside{float:none;width:100%;margin-bottom:80px;border-left:0}
 aside:before{top:-10px;left:50%;-ms-transform:rotate(45deg) translateX(-50%);transform:rotate(45deg) translateX(-50%)}
@@ -35,6 +35,13 @@ aside .step_block:last-of-type{margin-right:0}}aside .step_block h3{font-size:1r
 aside .step_block a{display:block;padding:20px;position:absolute;width:100%;left:0;text-align:center;color:#fff;text-decoration:none;bottom:0;transition:all ease-out .25s;background:#1179b0;background:linear-gradient(to bottom,#1179b0 0,#005293 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1179b0',endColorstr='#005293',GradientType=0)}
 @media only screen and (max-width:940px){aside .step_block a{font-size:.65rem}}@media only screen and (max-width:800px){aside .step_block a{font-size:1rem}
 }aside .step_block a:hover{background:#1179b0;background:linear-gradient(to bottom,#0c6290 0,#002c4e 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1179b0',endColorstr='#005293',GradientType=0)}
+aside .form_holder{width:100%;margin:0 auto;display:none}aside .form_holder .mktoForm{width:100% !important}
+aside .form_holder .mktoForm .mktoLabel{width:100% !important;color:#fff;font-family:'Roboto',sans-serif !important;font-size:.85rem;right:400 !important;margin-top:.1rem}
+aside .form_holder .mktoForm .mktoGutter{display:none}aside .form_holder .mktoForm .mktoField{width:100% !important;background-color:rgba(255,255,255,0);border:0;border-bottom:2px solid #fff;margin-bottom:0;padding:10px 0;color:#fff;outline:0;font-size:.85rem;font-family:'Roboto',sans-serif !important;transition:all ease-out .25s}
+aside .form_holder .mktoForm .mktoField:focus{border-bottom-color:#0d4f6e}aside .form_holder .mktoForm .mktoButtonRow{width:100% !important;margin-top:2rem}
+aside .form_holder .mktoForm .mktoButtonWrap{width:100% !important;display:block !important;margin-left:0 !important}
+aside .form_holder .mktoForm .mktoButton{width:100% !important;display:block !important;background-color:#0d4f6e !important;background-image:none !important;border:0 !important;font-size:1rem !important;font-family:'Roboto',sans-serif !important;text-transform:uppercase;transition:all ease-out .25s !important}
+aside .form_holder .mktoForm .mktoButton:hover{background-color:#0a3e57 !important}
 footer{padding-bottom:100px}footer .left{display:block;width:50%;float:left}footer .left p{margin-bottom:.5rem}
 footer .left p a{color:#000;text-decoration:none}footer .left p a:hover{text-decoration:underline}
 @media only screen and (max-width:800px){footer .left{float:none;width:100%;margin-bottom:1rem}
