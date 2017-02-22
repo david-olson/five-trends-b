@@ -121,6 +121,11 @@ function playClickHandler() {
                 videoSelector = 'row' + videoId.sequence;
                 $('#' + videoSelector).addClass('active_row');
 
+                Munchkin.munchkinFunction('visitWebPage', {
+                    url: document.location.path,
+                    params: 'version=B&videoWatched=' + theVideoId.sequence
+                });
+
                 history.pushState(null, null, '?id=' + videoId.sequence);
             }
 
@@ -179,6 +184,6 @@ function playDisabledClickHandler() {
 
 function formClickHandler() {
     var formSlideDown = document.getElementById('formHolder');
-    
+
     $(formSlideDown).slideDown(750);
 }

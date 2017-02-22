@@ -1,6 +1,7 @@
 header {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 2rem;
     .logo {
         max-width: 200px;
         display: inline-block;
@@ -14,9 +15,16 @@ header {
             }
         }
     }
+    .divider {
+        display: inline-block;
+        vertical-align: middle;
+        width: 2px;
+        background-color: #000000;
+        height: 50px;
+        margin: 0 40px;
+    }
     h1 {
         display: inline-block;
         vertical-align: middle;
-        margin-left: 40px;
     }
 }

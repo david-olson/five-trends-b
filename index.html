@@ -42,14 +42,14 @@
 
     <!--facebook-->
     <meta property="og:url" content="${facebookShareLink}" />
-    <meta property="og:title" content="5 Trends for Healthcare in 2017 | Premier Inc." />
-    <meta property="og:description" content="Wondering what changes you can expect to see in healthcare under the new administration? You’re not alone." />
-    <meta property="og:image" content="https://uberflip.cdntwrk.com/files/aHViPTYyMzk0JmNtZD1wcmltYXJ5X2xvZ28mdmVyc2lvbj0xNDgwNDUyOTU3JnNpZz0zODliNWM3MWEzZWQ2ZTU3MzhiMjQxZTY2Mzk3Y2NhYQ%253D%253D" />
+    <meta property="og:title" content="${facebookShareTitle}" />
+    <meta property="og:description" content="${facebookShareDesc}" />
+    <meta property="og:image" content="${facebookShareImageLink}" />
     <!--/facebook-->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="main.min.css">
-    <!--<link rel="stylesheet" href="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_main.min.css">-->
+    <!--    <link rel="stylesheet" href="main.min.css">-->
+    <link rel="stylesheet" href="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_main.min.css">
 </head>
 
 <body>
@@ -59,12 +59,12 @@
                 <div class="logo">
                     <a href="http://premierinc.com" target="_self"><img src="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_logo.svg" alt="" /></a>
                 </div>
+                <div class="divider"></div>
                 <h1>Perspectives <span class="bold">2017</span></h1>
             </header>
-            <div class="mktoText" id="mainBody" mktoName="Main Body">
-                <h2>How will you prepare your organization for the changes ahead?</h2>
-                <p>Wondering what changes you can expect to see in healthcare under the new administration? You’re not alone. With the “repeal and replacement” of the Affordable Care Act looming in Washington, many healthcare leaders are wondering how to move forward and prepare for the future.</p>
-                <p>Our team of healthcare experts share what you can expect to see in 2017 and how you can position your organization for success. Watch the video now. </p>
+            <div class="mktoText main_body" id="mainBody" mktoName="Main Body">
+                <h2>Healthcare is Changing. Are You Ready?</h2>
+                <p> Wondering what you can expect to see under the new administration? Our team of experts share their thoughts. Learn how to position your organization for success in 2017.</p>
             </div>
             <div class="video" id="video">
                 <div class="video_target" id="videoTarget"></div>
@@ -173,12 +173,37 @@
         <a id="shareClose" class="small" href="javascript:closeShare()">Close This Window</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--
     <script src="./assets/js/vendors.min.js"></script>
     <script src="./assets/js/custom.min.js"></script>
-    <!--
-        <script src="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_vendors.min.js"></script>
-        <script src="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_custom.min.js"></script>
 -->
+
+    <script src="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_vendors.min.js"></script>
+    <script src="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_custom.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            var didInit = false;
+
+            function initMunchkin() {
+                if (didInit === false) {
+                    didInit = true;
+                    Munchkin.init('381-NBB-525');
+                }
+            }
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//munchkin.marketo.net/munchkin.js';
+            s.onreadystatechange = function () {
+                if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                    initMunchkin();
+                }
+            };
+            s.onload = initMunchkin;
+            document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+    </script>
     <script>
         function getVideoId(number) {
             console.log(number);
@@ -326,9 +351,9 @@
                     setCookie('lvw17123', theVideoId.sequence, 300);
                 }
             }, 2000);
-
-
-
+            Munchkin.munchkinFunction('clickLink', {
+                href: 'videoId=' + theVideoId.sequence
+            });
         }
     </script>
     <script>

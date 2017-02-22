@@ -6,12 +6,13 @@ table{border-collapse:collapse;border-spacing:0}*{box-sizing:border-box}.contain
 .share_toaster{display:none;position:fixed;top:50%;left:50%;max-width:500px;margin:0 auto;background-color:#fff;padding:100px;text-align:center;-ms-transform:translate(-50%,-500%);transform:translate(-50%,-500%);transition:cubic-bezier(0.55,-0.39,0.44,1.32) .75s}
 .share_toaster .link{background-color:#efefef;padding:10px;margin-bottom:1rem}html{font-size:calc(.75em + .75vw)}
 @media screen and (min-width:50em){html{font-size:1.15em}}body,h1,h2,h3,h3,h5,p,a,button,input{font-family:'Roboto',sans-serif}
-h1{font-size:1.602rem;text-transform:uppercase}h2{font-size:1.424rem;text-transform:uppercase;margin-bottom:1rem}
+h1{font-size:1.602rem;text-transform:uppercase}h2{font-size:1.424rem;text-transform:uppercase;margin-bottom:2rem}
 h3{font-size:1.266rem}h4{font-size:1.125rem}p{font-size:1rem;margin-bottom:1rem;color:#666;line-height:1.25}
-.small{font-size:.75rem}.bold{font-weight:900}header{padding-top:20px;padding-bottom:20px}
+.small{font-size:.75rem}.bold{font-weight:900}header{padding-top:20px;padding-bottom:20px;margin-bottom:2rem}
 header .logo{max-width:200px;display:inline-block;vertical-align:middle}header .logo img{width:100%;height:auto;transition:all ease-out .25s}
-header .logo img:hover{opacity:.5}header h1{display:inline-block;vertical-align:middle;margin-left:40px}
-main{width:64%;float:left}main p{padding-left:10px}@media only screen and (max-width:800px){main{float:none;width:100%}
+header .logo img:hover{opacity:.5}header .divider{display:inline-block;vertical-align:middle;width:2px;background-color:#000;height:50px;margin:0 40px}
+header h1{display:inline-block;vertical-align:middle}main{width:64%;float:left}main .main_body{margin-bottom:2rem}
+main p{padding-left:10px}@media only screen and (max-width:800px){main{float:none;width:100%}
 }main .video{width:100%;margin-bottom:1rem}main .video_info{border-top:1px solid #ccc;padding:10px 0;border-bottom:1px solid #ccc;margin-bottom:1rem}
 main .video_info .share{width:80%;float:left}main .video_info p{display:inline-block;vertical-align:middle;margin-bottom:0;margin-right:10px}
 main .video_info ul{list-style:none;display:inline-block;vertical-align:middle}main .video_info ul li{display:inline-block;vertical-align:middle;margin-right:10px}
