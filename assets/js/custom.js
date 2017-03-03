@@ -31,6 +31,9 @@ function main() {
         }
     }, 500);
     playClickHandler();
+    $('#shareLink').click(function() {
+        $(this).select();
+    });
     player.addEventListener('onStateChange', 'initialize');
     $('#toasterOverlay').click(function () {
         closeShare();
@@ -49,7 +52,7 @@ function main() {
         e.preventDefault();
         FB.ui({
             method: 'share',
-            href: 'https://premierinc.com',
+            href: 'http://offers.premierinc.com/Landing-Pages-Test_17123-Test.htmls',
             app_id: '382579548779670',
             display: 'iframe'
         }, function (response) {});
@@ -121,10 +124,9 @@ function playClickHandler() {
                 videoSelector = 'row' + videoId.sequence;
                 $('#' + videoSelector).addClass('active_row');
 
-                Munchkin.munchkinFunction('visitWebPage', {
-                    url: document.location.path,
-                    params: 'version=B&videoWatched=' + theVideoId.sequence
-                });
+//                Munchkin.munchkinFunction('clickLink', {
+//                    href: 'videoId=' + theVideoId.sequence
+//                });
 
                 history.pushState(null, null, '?id=' + videoId.sequence);
             }
@@ -151,12 +153,8 @@ function shareClickHandler() {
             $('#shareToaster').css({
                 'transform': 'translate(-50%, -50%)'
             });
+            $('#shareLink').select();
         }, 500);
-        setTimeout(function () {
-            $('#shareToaster').css({
-                'transform': 'translate(-50%, -50%)'
-            });
-        }, 1000);
     }, 500);
 }
 

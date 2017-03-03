@@ -44,10 +44,17 @@ aside .form_holder .mktoForm .mktoField:focus{border-bottom-color:#0d4f6e}aside 
 aside .form_holder .mktoForm .mktoButtonWrap{width:100% !important;display:block !important;margin-left:0 !important}
 aside .form_holder .mktoForm .mktoButton{width:100% !important;display:block !important;background-color:#0d4f6e !important;background-image:none !important;border:0 !important;font-size:1rem !important;font-family:'Roboto',sans-serif !important;text-transform:uppercase;transition:all ease-out .25s !important}
 aside .form_holder .mktoForm .mktoButton:hover{background-color:#0a3e57 !important}
+aside .form_holder .mktoForm .mktoRadioList{width:100% !important;margin-top:2rem !important}
+aside .form_holder .mktoForm .mktoField[type=radio]{display:inline-block !important;width:7% !important;float:none !important;margin-right:3% !important}
+aside .form_holder .mktoForm .mktoRadioList label{display:inline-block !important;vertical-align:top !important;width:90% !important;margin:0 !important;float:none !important;color:#fff !important}
+aside .form_holder .mktoForm textarea{padding:10px !important;border:2px solid #fff !important;font-size:.75rem !important;margin-top:1rem !important}
 footer{padding-bottom:100px}footer .left{display:block;width:50%;float:left}footer .left p{margin-bottom:.5rem}
 footer .left p a{color:#000;text-decoration:none}footer .left p a:hover{text-decoration:underline}
 @media only screen and (max-width:800px){footer .left{float:none;width:100%;margin-bottom:1rem}
 }footer .right{display:block;width:50%;float:right;text-align:right}footer .right ul{list-style:none}
 footer .right ul li{display:inline-block}footer .right ul li img{width:30px;height:30px;transition:all ease-out .25s}
 footer .right ul li img:hover{opacity:.5}@media only screen and (max-width:800px){footer .right{float:none;width:100%;text-align:left}
-}
+}main.thanks{width:100%;margin-bottom:2rem;border-bottom:1px solid #000}main.thanks a{color:#000;transition:color ease-out .25s}
+main.thanks a:visited{color:#aaa;transition:color ease-out .25s}main.thanks a:hover{color:#1aa1e0}
+main.thanks a.button{display:inline-block;padding:15px 30px;background-color:#1aa1e0;color:#fff;text-decoration:none;text-transform:uppercase;margin:2rem 0;transition:all ease-out .25s}
+main.thanks a.button:hover{background-color:#1580b2}

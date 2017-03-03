@@ -48,7 +48,7 @@
     <!--/facebook-->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-    <!--    <link rel="stylesheet" href="main.min.css">-->
+    <!--        <link rel="stylesheet" href="main.min.css">-->
     <link rel="stylesheet" href="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_main.min.css">
 </head>
 
@@ -127,13 +127,13 @@
                 <div class="step_block block_2" id="block2" style="display: ${sidebarBlock2Active}">
                     <h3 class="mktoText" id="block2Header" mktoName="Block 2 Header">Find out how Premier can help you be successful as you navigate 2017</h3>
                     <img src="http://offers.premierinc.com/rs/381-NBB-525/images/icon_formconf_learnmore_59x59.png" alt="Book Icon" class="block_icon">
-                    <a class="mktoText" id="block2Link" href="javascript:formClickHandler()" mktoName="Block 2 Link">Learn more &gt;</a>
+                    <a class="mktoText" id="block2Link" href="${sidebarBlock2Link}" mktoName="Block 2 Link">Learn more &gt;</a>
                 </div>
                 <div class="form_holder" id="formHolder">
                     <script src="//app-ab03.marketo.com/js/forms2/js/forms2.min.js"></script>
-                    <form autocomplete="off" id="mktoForm_1364"></form>
+                    <form id="mktoForm_1371"></form>
                     <script>
-                        MktoForms2.loadForm("//app-ab03.marketo.com", "381-NBB-525", 1364);
+                        MktoForms2.loadForm("//app-ab03.marketo.com", "381-NBB-525", 1371);
                     </script>
                 </div>
             </section>
@@ -169,14 +169,17 @@
     <div class="toaster_overlay" id="toasterOverlay"></div>
     <div class="share_toaster" id="shareToaster">
         <h2>Share Via Email:</h2>
-        <div class="link" id="shareLink"></div>
+        <textarea class="link" id="shareLink" name=""></textarea>
+        <p class="small">Command + C or Control + C to Copy Link to your keyboard.</p>
         <a id="shareClose" class="small" href="javascript:closeShare()">Close This Window</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
     <!--
     <script src="./assets/js/vendors.min.js"></script>
     <script src="./assets/js/custom.min.js"></script>
 -->
+
 
     <script src="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_vendors.min.js"></script>
     <script src="http://offers.premierinc.com/rs/381-NBB-525/images/17123_B_custom.min.js"></script>

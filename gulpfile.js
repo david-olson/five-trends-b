@@ -100,7 +100,8 @@ gulp.task('styles', function () {
             stream: true
         }))
         .pipe(rename({
-            suffix: '.min'
+            suffix: '.min',
+            prefix: '17123_B_'
         }))
         .pipe(minifycss({
             maxLineLen: 80

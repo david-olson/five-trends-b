@@ -170,6 +170,30 @@ aside {
                     background-color: darken($blue, 30%) !important;
                 }
             }
+            .mktoRadioList {
+            width: 100% !important;
+            margin-top: 2rem !important;
+            }
+            .mktoField[type=radio] {
+                display: inline-block !important;
+                width: 7% !important;
+                float: none !important;
+                margin-right: 3% !important;
+            }
+            .mktoRadioList label {
+                display: inline-block !important;
+                vertical-align: top !important;
+                width: 90% !important;
+                margin: 0 !important;
+                float: none !important;
+                color: #ffffff !important;
+            }
+            textarea {
+                padding: 10px !important;
+                border: 2px solid #ffffff !important;
+                font-size: .75rem !important;
+                margin-top: 1rem !important;
+            }
         }
     }
 }
